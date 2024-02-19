@@ -61,14 +61,7 @@ namespace MyQueue
             int size = _size;
             while (size-- > 0)
             {
-                if (item == null)
-                {
-                    if (_queue[num] == null)
-                    {
-                        return true;
-                    }
-                }
-                else if (_queue[num] != null && _queue[num].Equals(item))
+                if (_queue[num] != null && _queue[num].Equals(item))
                 {
                     return true;
                 }

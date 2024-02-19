@@ -24,9 +24,9 @@ namespace MyQueueConsole
             {
                 myqueue.Dequeue();
             }
-            int x = myqueue.Count;
-            for(int i = 0; i < x; i++)
+            for(int i = 0; i < myqueue.Count; i++)
             {
+                myqueue.Contains(i);
                 //Console.WriteLine(myqueue.Dequeue());
             }
             stopwatch.Stop();
@@ -43,13 +43,17 @@ namespace MyQueueConsole
             {
                 queue.Dequeue();
             }
-            int y = queue.Count;
-            for (int i = 0; i < y; i++)
+            for (int i = 0; i < queue.Count; i++)
             {
+                queue.Contains(i);
                 //Console.WriteLine(queue.Dequeue());
             }
             stopwatch1.Stop();
             Console.WriteLine();
+
+            //MyQueue<int> myQueue = new MyQueue<int>(0) { };
+            //myQueue.Enqueue(1);
+            //myQueue.Dequeue();
 
             Console.WriteLine(stopwatch.ElapsedMilliseconds);
             Console.WriteLine(stopwatch1.ElapsedMilliseconds);

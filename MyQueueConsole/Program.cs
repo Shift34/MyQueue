@@ -26,7 +26,7 @@ namespace MyQueueConsole
             }
             for(int i = 0; i < myqueue.Count; i++)
             {
-                myqueue.Contains(i);
+                myqueue.Contains(i + 50000);
                 //Console.WriteLine(myqueue.Dequeue());
             }
             stopwatch.Stop();
@@ -45,7 +45,7 @@ namespace MyQueueConsole
             }
             for (int i = 0; i < queue.Count; i++)
             {
-                queue.Contains(i);
+                queue.Contains(i+50000);
                 //Console.WriteLine(queue.Dequeue());
             }
             stopwatch1.Stop();

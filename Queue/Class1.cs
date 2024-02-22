@@ -86,7 +86,7 @@ namespace MyQueue
             }
             _queue = queue;
             _head = 0;
-            _tail = (_size != capacity) ? _size : 0;
+            _tail = _size;
         }
     }
 }

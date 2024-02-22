@@ -18,9 +18,9 @@ namespace MyQueue
 
         public int Count => _size;
 
-        public MyQueue(int capacity = 32) 
+        public MyQueue(int capacity = 4) 
         {  
-            capacity = capacity < 32 ? 32 : capacity;
+            capacity = capacity < 4 ? 4 : capacity;
             _queue = new T[capacity];
             _head = 0;
             _tail = 0;

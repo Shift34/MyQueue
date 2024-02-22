@@ -26,7 +26,7 @@ namespace MyQueueConsole
             }
             for (int i = 0; i < queue.Count; i++)
             {
-                queue.Contains(i + 50000);
+                if(!queue.Contains(i + 50000)) Console.WriteLine("not contain");
                 //Console.WriteLine(queue.Dequeue());
             }
             stopwatch1.Stop();
@@ -45,7 +45,7 @@ namespace MyQueueConsole
             }
             for (int i = 0; i < myqueue.Count; i++)
             {
-                myqueue.Contains(i + 50000);
+                if(!myqueue.Contains(i + 50000)) Console.WriteLine("not contain") ;
                 //Console.WriteLine(myqueue.Dequeue());
             }
             stopwatch.Stop();
